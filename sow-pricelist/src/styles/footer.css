@@ -49,3 +49,13 @@
         margin-top: 0;
     }
 }
+@media (max-width: 600px) {
+    .footer{
+        margin-top: 40px;
+    }
+}
+@media (max-width: 900px) and (orientation: landscape) {
+    .footer{
+        margin-top: 55px;
+    }
+}
