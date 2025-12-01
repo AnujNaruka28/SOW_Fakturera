@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../../../styles/login.css';
 import {useForm} from 'react-hook-form';
 import { VscEye, VscEyeClosed } from "react-icons/vsc";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
@@ -13,7 +13,11 @@ const Login = () => {
         }
     });
     const [hidePassword,setHidePassword] = useState(true);
-    const submitAction = (data) => console.log(data); 
+    const navigate = useNavigate();
+    const submitAction = (data) => {
+        console.log(data); 
+        navigate('/dashboard/pricelist');
+    }
 
     const toggleViewPass = () => setHidePassword((prev) => (!prev)); 
     return (

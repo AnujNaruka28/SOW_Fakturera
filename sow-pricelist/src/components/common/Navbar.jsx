@@ -1,11 +1,11 @@
 import '../../styles/navbar.css';
 import { Link } from 'react-router-dom';
 import diamond from '../../assets/diamond.png';
-import global from '../../assets/GB.png';
-import sweden from '../../assets/SE.png';
+
 import { FiMenu } from "react-icons/fi";
 import { TfiClose } from "react-icons/tfi";
 import { useState } from 'react';
+import LangDrop from './LangDrop';
 
 const Navbar = () => {
 
@@ -35,22 +35,10 @@ const Navbar = () => {
             href: '/terms'
         }
     ]
-    const languages = [
-        {
-            lang:'English',flag: global
-        },
-        {
-            lang:'Svenska',flag: sweden
-        }
-    ]
-    const [language,setLanguage] = useState({lang:'English',flag: global});
-    const [langdropDown,setlangdropDown] = useState(false);
+    
     const [menu,setMenu] = useState(false);
-    const toggleDropDown = () => setlangdropDown((prev) => (!prev));
     const toggleHamBurger = () => setMenu((prev) => (!prev));
-    const fetchLang = () => {
-        //here await fetch in useeffect hook for language
-    }
+
     return (
         <nav className='navbar'>
             <header className='nav-header'>
@@ -89,33 +77,7 @@ const Navbar = () => {
                         }
                     </div>
 
-                    {/* Language Drop Down */}
-                    <div className='lang-box' onClick={() => toggleDropDown()}>
-                        <div id='nav-end'>
-                            <p id='lang-text'>
-                                {language.lang} 
-                            </p>
-
-                            <img src={language.flag} alt={language.lang} id='flag' />                        
-                        </div>
-
-                        {
-                            !!langdropDown && 
-                            <div id='drop-down'>
-                            {
-                                languages.map((lng,i) => (
-                                    <div key={i} id='drop-item' onClick={() => setLanguage({lang: lng.lang,flag: lng.flag})}>
-                                        <p id='lang-drop-text'>
-                                            {lng.lang} 
-                                        </p>
-
-                                         <img src={lng.flag} alt={lng.lang} id='flag' /> 
-                                    </div>
-                                ))
-                            }
-                        </div>
-                        }
-                    </div>
+                    <LangDrop/>
                 </div>
                 
             </header>
