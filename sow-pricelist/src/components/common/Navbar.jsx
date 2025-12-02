@@ -6,6 +6,7 @@ import { FiMenu } from "react-icons/fi";
 import { TfiClose } from "react-icons/tfi";
 import { useState } from 'react';
 import LangDrop from './LangDrop';
+import { useMobilePortrait } from '../../hooks/useMobilePortrait';
 
 const Navbar = () => {
 
@@ -38,7 +39,7 @@ const Navbar = () => {
     
     const [menu,setMenu] = useState(false);
     const toggleHamBurger = () => setMenu((prev) => (!prev));
-
+    const restricted = useMobilePortrait();
     return (
         <nav className='navbar'>
             <header className='nav-header'>
@@ -55,7 +56,7 @@ const Navbar = () => {
                         <div className='menu-nav'>
                             {
                                 navOptions.map((opt,i) => (
-                                    <Link to={opt.href} key={i} className={`menu-item ${(opt.name === 'Terms') ? 'hidden-term' : 'block'} `}>
+                                    <Link to={opt.href} key={i} className={`menu-item ${((restricted === false) && opt.name === 'Terms') ? 'hidden-term' : ''} `}>
                                         {opt.name}
                                     </Link>
                                 ))

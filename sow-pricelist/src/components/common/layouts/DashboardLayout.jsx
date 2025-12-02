@@ -6,10 +6,10 @@ const DashboardLayout = () => {
     return (
         <main className="dashboard-layout">
             <Header/>
-            <div>
+            <section className="dashboard-main">
                 <Sidebar/>
                 <Outlet/>
-            </div>
+            </section>
         </main>
     )
 }

@@ -111,10 +111,8 @@
 .hidden-term{
     display: none;
 }
-@media (max-width: 430px) {
-    .hidden-term{
-        display: block;
-    }
+
+@media (max-width: 771px) {
     .menu-nav{
         height: 400px;
         width: 16rem;

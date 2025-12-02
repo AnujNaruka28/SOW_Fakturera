@@ -1,0 +1,23 @@
+.not-found{
+    height: calc(100vh - 190px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.not-found-head{
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+.width-custom{
+    width: 82%;
+    color: #737373;
+
+}
+.width-full{
+    width: 100%;
+    color: #fff;
+}
+.not-found-text{
+    font-size: 40px;
+}

@@ -1,7 +1,8 @@
+import '../../../../styles/dashboard/pricelist.css';
 
 const Pricelist = () => {
     return (
-            <section>
+            <section className="pricelist-main">
 
             </section>
     )

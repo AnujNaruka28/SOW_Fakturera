@@ -1,4 +1,10 @@
 .dashboard-layout{
     width: 100vw;
     height: 100vh;
+    background-color: #f5f5f5;
+}
+.dashboard-main{
+    width: 100%;
+    height: calc(100% - 80px) !important;
+    display: flex;
 }
