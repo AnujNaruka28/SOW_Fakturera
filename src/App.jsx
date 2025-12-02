@@ -5,7 +5,7 @@ import DashboardLayout from './components/common/layouts/DashboardLayout';
 import PublicLayout from './components/common/layouts/PublicLayout'
 import NotFound from './components/common/NotFound';
 import { useMobilePortrait } from './hooks/useMobilePortrait';
-import Terms from './components/common/documents/terms';
+import Terms from './components/common/documents/Terms';
 
 function App() {
 
