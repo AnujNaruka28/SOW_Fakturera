@@ -2,3 +2,13 @@
     width: 82%;
     height: 100%;
 }
+@media (max-width: 1300px) {
+    .pricelist-main{
+        width: 76%;
+    }
+}
+@media (max-width: 1000px) {
+    .pricelist-main{
+        width: 100%;
+    }
+}

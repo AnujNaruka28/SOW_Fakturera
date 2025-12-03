@@ -14,6 +14,16 @@
     color: #737373;
 
 }
+@media (max-width: 1300px) {
+    .width-custom{
+        width: 76%;
+    }
+}
+@media (max-width: 1000px) {
+    .width-custom{
+        width: 100%;
+    }
+}
 .width-full{
     width: 100%;
     color: #fff;

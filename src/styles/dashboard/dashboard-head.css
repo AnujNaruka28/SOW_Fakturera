@@ -10,6 +10,7 @@
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
 }
 .online-indicator{
     background-color: #64ca5a;
@@ -38,6 +39,21 @@
     gap:12px;
     font-weight: 600;
     font-size: 16px;
+}
+.hamburger-dashboard{
+    display: none;
+}
+@media (max-width: 1000px) {
+    .left-profile-box{
+        display: none;
+        width: 0%;
+    }
+    .hamburger-dashboard{
+        display: block;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+    }
 }
 .left-name-company-box{
     display: flex;

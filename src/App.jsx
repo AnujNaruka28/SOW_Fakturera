@@ -11,7 +11,7 @@ function App() {
 
   const isMobilePortrait = useMobilePortrait();
   return (
-    <main>
+    <>
       
       <Routes>
 
@@ -32,7 +32,7 @@ function App() {
 
       </Routes>
 
-    </main>
+    </>
   )
 }
 

@@ -6,6 +6,17 @@
     display: flex;
     flex-direction: column;
 }
+@media (max-width: 1300px) {
+    .sidebar-main{
+        width: 24%;
+    }
+}
+@media (max-width: 1000px) {
+    .sidebar-main{
+        display: none;
+        width: 0%;
+    }
+}
 .sidebar-header{
     width: 100%;
     display: flex;

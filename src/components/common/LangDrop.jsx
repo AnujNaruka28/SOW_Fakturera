@@ -2,6 +2,8 @@ import { useState } from 'react';
 import '../../styles/navbar.css';
 import global from '../../assets/GB.png';
 import sweden from '../../assets/SE.png';
+import { useLocation } from 'react-router-dom';
+import { useMobilePortrait } from '../../hooks/useMobilePortrait';
 const LangDrop = () => {
     const languages = [
             {
@@ -13,6 +15,8 @@ const LangDrop = () => {
     ];
     const [language,setLanguage] = useState({lang:'English',flag: global});
     const [langdropDown,setlangdropDown] = useState(false);
+    const {pathname} = useLocation();
+    const isMobilePortrait = useMobilePortrait();
     const toggleDropDown = () => setlangdropDown((prev) => (!prev));
     const fetchLang = () => {
         //here await fetch in useeffect hook for language
@@ -20,7 +24,7 @@ const LangDrop = () => {
     return (
         <div className='lang-box' onClick={() => toggleDropDown()}>
             <div id='nav-end'>
-                <p id='lang-text'>
+                <p className={`${(pathname.split('/')[1] === 'dashboard' && isMobilePortrait) ? 'hidden-lang-text' : ""} lang-text `}>
                     {language.lang} 
                 </p>
 
@@ -29,7 +33,7 @@ const LangDrop = () => {
 
             {
                 !!langdropDown && 
-                <div id='drop-down'>
+                <div id='drop-down' className={`${(pathname.split('/')[1] === 'dashboard' && isMobilePortrait) && 'dropdown-posfix'}`}>
                 {
                     languages.map((lng,i) => (
                         <div key={i} id='drop-item' onClick={() => setLanguage({lang: lng.lang,flag: lng.flag})}>

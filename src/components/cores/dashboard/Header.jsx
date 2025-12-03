@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import '../../../styles/dashboard/dashboard-head.css';
 import LangDrop from '../../common/LangDrop';
 import ProfilePlaceholder from '../../../assets/profile-placeholder.svg';
+import { HiOutlineMenuAlt2 } from "react-icons/hi";
+
 const Header = () => {
     return (
         <nav className='dashboard-nav'>
@@ -18,6 +20,8 @@ const Header = () => {
                         <p className='company-name'> Stortford AS</p>
                     </div>
                 </div>
+
+                <HiOutlineMenuAlt2 className='hamburger-dashboard'/>
 
                 <LangDrop/>
             </header>

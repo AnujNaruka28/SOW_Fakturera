@@ -1,5 +1,5 @@
 .terms-main{
-    height: calc(100vh - 70px);
+    height: auto;
 }
 .terms-inner{
     width: 85%;
@@ -20,7 +20,7 @@
     color: white;
     text-align: center;
 }
-.terms-close{
+.terms-close,.terms-close-bottom{
     font-size: 1.125em;
     margin-top: 15px;
     border-radius: 3rem;
@@ -35,6 +35,9 @@
     margin-left: auto;
     margin-right: auto;
 }
+.terms-close-bottom{
+    margin-top: 50px;
+}
 .terms-text{
     background: #fff;
     width: 750px;
@@ -48,6 +51,16 @@
     line-height: 1.5em;
     font-size: 14px;
     margin-top: 28px;
+}
+.top-margin-p-term{
+    margin-top: 6px;
+}
+.bottom-margin-p-term{
+    margin-bottom: 6px;
+}
+.terms-about-anchor{
+    cursor: pointer;
+    color: rgb(0, 68, 226);
 }
 @media (max-width: 770px) and (orientation: portrait) {
     .terms-text{

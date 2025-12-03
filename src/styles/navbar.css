@@ -108,6 +108,9 @@
     line-height: 18px;
     font-size: 16px;
 }
+.hidden-lang-text{
+    display: none;
+}
 .hidden-term{
     display: none;
 }
@@ -160,7 +163,9 @@
     border-radius: 0.5rem;
     box-shadow: 0 10px 15px -3px rgba(17, 17, 17, 0.7), 0 4px 6px -4px rgba(34, 34, 34, 0.7);
 }
-
+.dropdown-posfix{
+    margin-left: -3.75rem !important;
+}
 @media (max-width: 1270px) {
     #nav-options{
         display: none;

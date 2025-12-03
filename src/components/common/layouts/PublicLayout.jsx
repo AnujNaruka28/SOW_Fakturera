@@ -7,7 +7,7 @@ const PublicLayout = () => {
     const {pathname} = useLocation();
     const isCheckMobilePortriat = useMobilePortrait();
     return (
-        <main className='app-main'>
+        <main className={`app-main ${(pathname === '/terms') && 'app-padding'}`}>
             <Navbar/>
                 <Outlet/>
             {
