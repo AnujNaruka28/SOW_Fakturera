@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "Product" ALTER COLUMN "productOrService" SET DATA TYPE VARCHAR(255),
+ALTER COLUMN "description" SET DATA TYPE TEXT;

@@ -1,0 +1,41 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  company   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Product {
+  id               Int      @id @default(autoincrement())
+  articleNumber    BigInt   @unique
+  productOrService String   @db.VarChar(255)
+  inPrice          BigInt
+  price            BigInt
+  unit             String
+  inStock          BigInt
+  description      String   @db.Text
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @default(now()) @updatedAt
+}
+
+model Translation {
+  id        Int      @id @default(autoincrement())
+  lang      String
+  key       String
+  value     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+
+  @@unique([lang, key])
+}

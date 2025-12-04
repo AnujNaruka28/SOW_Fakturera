@@ -1,0 +1,362 @@
+[
+  {
+    "articleNumber": 1234567890,
+    "productOrService": "This is a test product with fifty characters this!",
+    "inPrice": 900500,
+    "price": 1500800,
+    "unit": "kilometers/hour",
+    "inStock": 2500600,
+    "description": "This is the description with fifty character this!"
+  },
+  {
+    "articleNumber": 1000000001,
+    "productOrService": "Industrial safety gloves for chemical handling use",
+    "inPrice": 25000,
+    "price": 45000,
+    "unit": "pair",
+    "inStock": 150,
+    "description": "Durable safety gloves for industry grade protection use"
+  },
+  {
+    "articleNumber": 1000000002,
+    "productOrService": "Premium office chair with ergonomic lumbar support",
+    "inPrice": 180000,
+    "price": 299999,
+    "unit": "piece",
+    "inStock": 40,
+    "description": "Comfortable ergonomic design with neck and back support"
+  },
+  {
+    "articleNumber": 1000000003,
+    "productOrService": "Wireless mouse with silent click and fast latency",
+    "inPrice": 15000,
+    "price": 29000,
+    "unit": "piece",
+    "inStock": 300,
+    "description": "Ergonomic wireless mouse with long battery performance"
+  },
+  {
+    "articleNumber": 1000000004,
+    "productOrService": "4K LED monitor with HDR and reduced eye strain tech",
+    "inPrice": 320000,
+    "price": 499000,
+    "unit": "piece",
+    "inStock": 25,
+    "description": "High quality 4K HDR monitor with vibrant colors clarity"
+  },
+  {
+    "articleNumber": 1000000005,
+    "productOrService": "Mechanical keyboard with blue switches RGB lighting",
+    "inPrice": 90000,
+    "price": 145000,
+    "unit": "piece",
+    "inStock": 90,
+    "description": "Mechanical RGB keyboard designed for typing and gaming"
+  },
+  {
+    "articleNumber": 1000000006,
+    "productOrService": "High density waterproof insulation foam panel pack",
+    "inPrice": 55000,
+    "price": 92000,
+    "unit": "set",
+    "inStock": 60,
+    "description": "Insulation foam material suitable for walls and roofing"
+  },
+  {
+    "articleNumber": 1000000007,
+    "productOrService": "Electric drill machine with multi speed metal body",
+    "inPrice": 270000,
+    "price": 350000,
+    "unit": "piece",
+    "inStock": 45,
+    "description": "Durable drill with adjustable torque and power levels"
+  },
+  {
+    "articleNumber": 1000000008,
+    "productOrService": "Heavy duty wrench kit with premium alloy materials",
+    "inPrice": 75000,
+    "price": 120000,
+    "unit": "set",
+    "inStock": 100,
+    "description": "Professional wrench kit suitable for workshops garage"
+  },
+  {
+    "articleNumber": 1000000009,
+    "productOrService": "Fast charging USB Type C cable braided nylon durable",
+    "inPrice": 4000,
+    "price": 9000,
+    "unit": "piece",
+    "inStock": 500,
+    "description": "Flexible durable braided cable supporting fast charging"
+  },
+  {
+    "articleNumber": 1000000010,
+    "productOrService": "Polymer file folders pack with moisture resistant coat",
+    "inPrice": 3000,
+    "price": 7500,
+    "unit": "pack",
+    "inStock": 550,
+    "description": "Long lasting moisture resistant folder pack for office"
+  },
+  {
+    "articleNumber": 1000000011,
+    "productOrService": "LED strip light with remote and smart color control",
+    "inPrice": 25000,
+    "price": 51000,
+    "unit": "roll",
+    "inStock": 180,
+    "description": "Flexible RGB strip compatible with smart lighting apps"
+  },
+  {
+    "articleNumber": 1000000012,
+    "productOrService": "Rechargeable toolbox flashlight with magnetic handle",
+    "inPrice": 32000,
+    "price": 58000,
+    "unit": "piece",
+    "inStock": 140,
+    "description": "Strong beam flashlight ideal for work tunnels and field"
+  },
+  {
+    "articleNumber": 1000000013,
+    "productOrService": "Professional paint brush set with firm grip handles",
+    "inPrice": 20000,
+    "price": 47000,
+    "unit": "set",
+    "inStock": 210,
+    "description": "Fine bristles brush set suitable for detail painting job"
+  },
+  {
+    "articleNumber": 1000000014,
+    "productOrService": "Automatic soap dispenser with refillable container",
+    "inPrice": 34000,
+    "price": 78000,
+    "unit": "piece",
+    "inStock": 95,
+    "description": "Touchless dispenser system designed for hygiene spaces"
+  },
+  {
+    "articleNumber": 1000000015,
+    "productOrService": "Foldable trolley cart with high weight capacity use",
+    "inPrice": 120000,
+    "price": 210000,
+    "unit": "piece",
+    "inStock": 50,
+    "description": "Durable steel construction portable cart for logistics"
+  },
+  {
+    "articleNumber": 1000000016,
+    "productOrService": "Smart digital weighing scale with precise accuracy",
+    "inPrice": 69000,
+    "price": 115000,
+    "unit": "piece",
+    "inStock": 85,
+    "description": "Accurate scale supporting metric and imperial reading"
+  },
+  {
+    "articleNumber": 1000000017,
+    "productOrService": "Wired barcode scanner compatible with warehouse apps",
+    "inPrice": 89000,
+    "price": 140000,
+    "unit": "piece",
+    "inStock": 60,
+    "description": "Plug and scan barcode system ideal for retail inventory"
+  },
+  {
+    "articleNumber": 1000000018,
+    "productOrService": "Waterproof safety shoes with reinforced steel insert",
+    "inPrice": 160000,
+    "price": 260000,
+    "unit": "pair",
+    "inStock": 70,
+    "description": "Protective footwear suitable for industrial heavy tasks"
+  },
+  {
+    "articleNumber": 1000000019,
+    "productOrService": "Heavy load storage rack adjustable metal construction",
+    "inPrice": 350000,
+    "price": 520000,
+    "unit": "piece",
+    "inStock": 35,
+    "description": "Sturdy rack system for storage organization in factory"
+  },
+  {
+    "articleNumber": 1000000020,
+    "productOrService": "First aid emergency medical kit with mandatory tools",
+    "inPrice": 55000,
+    "price": 105000,
+    "unit": "kit",
+    "inStock": 130,
+    "description": "Standard emergency kit containing basic medical tools"
+  },
+  {
+    "articleNumber": 1000000021,
+    "productOrService": "Desktop microphone with adjustable stand noise filter",
+    "inPrice": 42000,
+    "price": 89000,
+    "unit": "piece",
+    "inStock": 95,
+    "description": "Clear audio mic ideal for recording calls podcasts studio"
+  },
+  {
+    "articleNumber": 1000000022,
+    "productOrService": "USB storage drive 128GB durable metallic enclosure",
+    "inPrice": 12000,
+    "price": 26000,
+    "unit": "piece",
+    "inStock": 400,
+    "description": "Reliable storage device for business and personal files"
+  },
+  {
+    "articleNumber": 1000000023,
+    "productOrService": "Surge protector power strip with six universal ports",
+    "inPrice": 30000,
+    "price": 58000,
+    "unit": "piece",
+    "inStock": 180,
+    "description": "Multi outlet strip with overload protection and safety"
+  },
+  {
+    "articleNumber": 1000000024,
+    "productOrService": "Office whiteboard magnetic surface aluminum frame",
+    "inPrice": 95000,
+    "price": 159000,
+    "unit": "piece",
+    "inStock": 55,
+    "description": "Smooth writable whiteboard ideal for office and school"
+  },
+  {
+    "articleNumber": 1000000025,
+    "productOrService": "Laser printer toner cartridge compatible long use",
+    "inPrice": 79000,
+    "price": 135000,
+    "unit": "piece",
+    "inStock": 110,
+    "description": "High yield toner cartridge delivering crisp print text"
+  },
+  {
+    "articleNumber": 1000000026,
+    "productOrService": "Reusable cable ties pack strong nylon with lock grip",
+    "inPrice": 4000,
+    "price": 9500,
+    "unit": "pack",
+    "inStock": 620,
+    "description": "Durable nylon ties perfect for organizing cables wiring"
+  },
+  {
+    "articleNumber": 1000000027,
+    "productOrService": "Portable mini heater low noise compact office use",
+    "inPrice": 65000,
+    "price": 118000,
+    "unit": "piece",
+    "inStock": 75,
+    "description": "Energy efficient heater giving warm airflow compact size"
+  },
+  {
+    "articleNumber": 1000000028,
+    "productOrService": "Secure biometric fingerprint lock with keypad backup",
+    "inPrice": 180000,
+    "price": 265000,
+    "unit": "piece",
+    "inStock": 45,
+    "description": "Smart lock system offering biometric security features"
+  },
+  {
+    "articleNumber": 1000000029,
+    "productOrService": "Anti glare screen protector film for laptop display",
+    "inPrice": 6000,
+    "price": 14000,
+    "unit": "piece",
+    "inStock": 260,
+    "description": "Reduces eye strain prevents scratches and glare issues"
+  },
+  {
+    "articleNumber": 1000000030,
+    "productOrService": "Industrial fan high airflow metal blades adjustable",
+    "inPrice": 135000,
+    "price": 210000,
+    "unit": "piece",
+    "inStock": 38,
+    "description": "Heavy duty fan for warehouse and factory ventilation use"
+  },
+  {
+    "articleNumber": 1000000031,
+    "productOrService": "Smart thermostat with temperature scheduling WiFi",
+    "inPrice": 165000,
+    "price": 245000,
+    "unit": "piece",
+    "inStock": 52,
+    "description": "Energy saving thermostat controllable through mobile app"
+  },
+  {
+    "articleNumber": 1000000032,
+    "productOrService": "Professional toolbag with reinforced canvas stitching",
+    "inPrice": 48000,
+    "price": 94000,
+    "unit": "piece",
+    "inStock": 120,
+    "description": "Heavy duty toolbag suitable for construction mechanics"
+  },
+  {
+    "articleNumber": 1000000033,
+    "productOrService": "Adjustable desk organizer with sorting compartments",
+    "inPrice": 8500,
+    "price": 19000,
+    "unit": "piece",
+    "inStock": 310,
+    "description": "Multi slot organizer improving workspace management neat"
+  },
+  {
+    "articleNumber": 1000000034,
+    "productOrService": "Noise cancelling earmuffs industrial machine safety",
+    "inPrice": 27000,
+    "price": 56000,
+    "unit": "pair",
+    "inStock": 155,
+    "description": "Safety grade ear protection for factory and construction"
+  },
+  {
+    "articleNumber": 1000000035,
+    "productOrService": "Folding conference table lightweight hard top design",
+    "inPrice": 220000,
+    "price": 340000,
+    "unit": "piece",
+    "inStock": 28,
+    "description": "Portable table ideal for events presentations workshops"
+  },
+  {
+    "articleNumber": 1000000036,
+    "productOrService": "Shutdown emergency safety button panel heavy duty",
+    "inPrice": 95000,
+    "price": 155000,
+    "unit": "piece",
+    "inStock": 32,
+    "description": "Industrial safety system button used for machine cutoff"
+  },
+  {
+    "articleNumber": 1000000037,
+    "productOrService": "Rechargeable walkie talkie long range antenna pair",
+    "inPrice": 180000,
+    "price": 299000,
+    "unit": "pair",
+    "inStock": 64,
+    "description": "Clear communication handheld device ideal security team"
+  },
+  {
+    "articleNumber": 1000000038,
+    "productOrService": "Thermal label printer compact design fast print speed",
+    "inPrice": 220000,
+    "price": 355000,
+    "unit": "piece",
+    "inStock": 41,
+    "description": "Fast printing thermal labels ideal for warehouse retail"
+  },
+  {
+    "articleNumber": 1000000039,
+    "productOrService": "Mobile device charging station with multiple sockets",
+    "inPrice": 88000,
+    "price": 159000,
+    "unit": "piece",
+    "inStock": 73,
+    "description": "Charging hub designed for offices events waiting rooms"
+  }
+]
