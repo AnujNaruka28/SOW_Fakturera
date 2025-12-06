@@ -57,7 +57,7 @@ const Navbar = () => {
                         <div className='menu-nav'>
                             {
                                 navOptions.map((opt,i) => (
-                                    <Link to={opt.href} key={i} className={`menu-item ${((restricted === false) && opt.name === 'Terms') ? 'hidden-term' : ''} `}>
+                                    <Link to={opt.href} key={i} className={`menu-item ${((restricted === false) && opt.href === '/terms') ? 'hidden-term' : ''} `}>
                                         {opt.name}
                                     </Link>
                                 ))
