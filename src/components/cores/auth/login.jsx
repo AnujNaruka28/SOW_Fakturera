@@ -3,6 +3,10 @@ import '../../../styles/login.css';
 import {useForm} from 'react-hook-form';
 import { VscEye, VscEyeClosed } from "react-icons/vsc";
 import { Link, useNavigate } from 'react-router-dom';
+import apiService from '../../../services/apiService';
+import { toast } from 'react-toastify';
+import { useTranslation } from '../../../context/TranslationContext';
+import { Spin } from 'antd';
 
 const Login = () => {
 
@@ -13,35 +17,53 @@ const Login = () => {
         }
     });
     const [hidePassword,setHidePassword] = useState(true);
+    const [loading,setLoading] = useState(false);
     const navigate = useNavigate();
-    const submitAction = (data) => {
-        console.log(data); 
-        navigate('/dashboard/pricelist');
-    }
+    const submitAction = async (data) => {
 
+        setLoading(true);
+        try {
+
+            const response = await apiService.login(data.email, data.password);
+
+            if(response?.data) {
+                localStorage.setItem("access_token", response.data);
+                apiService.setToken(response.data);
+            }
+            toast.success('Login Successful')
+            navigate('/dashboard/pricelist');
+            
+        } catch (error) {
+            console.log(error)
+            toast.error('Login Failed');
+        } finally {
+            setLoading(false);
+        }
+    }
+    const {t} = useTranslation();
     const toggleViewPass = () => setHidePassword((prev) => (!prev)); 
     return (
         <main className='login-box'>
             <div className='login-form'>
                 <form method="post" onSubmit={handleSubmit(submitAction)}>
                     <header className='login-header'>
-                        Log In
+                        {t("auth.login")}
                     </header>
                     <section className='login-section'>
                         <div className='login-email'>
                             <label htmlFor='email'>
-                                Enter your email address
+                                {t("auth.email.label")}
                             </label>
-                            <input type="email" placeholder='Email address' autoComplete='on' name='email' id='email' className='login-input-email' 
+                            <input type="email" placeholder={t("auth.email.placeholder")} autoComplete='on' name='email' id='email' className='login-input-email' 
                             {...register('email',{required:true})}/>
-                            {errors.email && <span className='error-login'>Please enter a valid email address</span>}
+                            {errors.email && <span className='error-login'>{t("auth.email.error")}</span>}
                         </div>
                         <div className='login-password'>
                             <label htmlFor='password'>
-                                Enter your password
+                                {t("auth.password.label")}
                             </label>
                             <div id='password-input-box'>
-                                <input name='password' id='password' placeholder='Password' className='login-input-password' 
+                                <input name='password' id='password' placeholder={t("auth.password.placeholder")} className='login-input-password' 
                                 {...register('password',{required:true})} type={hidePassword ? 'password' : 'text' }/>
                                 {
                                     (hidePassword) ?  
@@ -50,21 +72,25 @@ const Login = () => {
                                     <VscEyeClosed className='eye-icon'onClick={() => toggleViewPass()}/>
                                 }
                             </div>
-                            {errors.password && <span className='error-login'>This field cannot be empty</span>}
+                            {errors.password && <span className='error-login'>{t("auth.password.error")}</span>}
                         </div>
                     </section>
                     <div className='form-login-btn-container'>
                         <button className='login-btn' type='submit'>
-                            Log In
+                            {
+                                loading ? <Spin size='small'/> : t("auth.login")
+                            }
                         </button>
                     </div>
                 </form>
 
                 <section id='footer-login'>
                     <Link to={'/register'} className='login-anchor'>
-                        Register
+                        {t("auth.register")}
                     </Link>
-                    <Link to={'/forgot-password'} className='login-anchor'>Forgot Password?</Link>
+                    <Link to={'/forgot-password'} className='login-anchor'>
+                        {t("auth.forgotPassword")}?
+                    </Link>
                 </section>
             </div>
         </main>

@@ -7,32 +7,33 @@ import { TfiClose } from "react-icons/tfi";
 import { useState } from 'react';
 import LangDrop from './LangDrop';
 import { useMobilePortrait } from '../../hooks/useMobilePortrait';
+import { useTranslation } from '../../context/TranslationContext.jsx';
 
 const Navbar = () => {
-
+    const {t} = useTranslation();
     const navOptions = [
         {
-            name: 'Home',
+            name: t("navbar.home"),
             href: '/home'
         },
         {
-            name: 'Order',
+            name: t("navbar.order"),
             href: '/order'
         },
         {
-            name: 'Our Customers',
+            name: t("navbar.customers"),
             href: '/customers'
         },
         {
-            name: 'About Us',
+            name: t("navbar.about"),
             href: '/about'
         },
         {
-            name: 'Contact Us',
+            name: t("navbar.contact"),
             href: '/contact'
         },
         {
-            name: 'Terms',
+            name: t("terms.title"),
             href: '/terms'
         }
     ]

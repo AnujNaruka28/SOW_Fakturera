@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
 import '../../styles/footer.css'
+import { useTranslation } from '../../context/TranslationContext';
 
 const Footer = () => {
+
+    const {t} = useTranslation();
     return (
         <footer className='footer'>
             <div className='footer-top'>
@@ -11,9 +14,9 @@ const Footer = () => {
                 <div className='footer-menu'>
                     {
                         [
-                            {opt: 'Home',href: '/home'},
-                            {opt: 'Order',href: '/order'},
-                            {opt: 'Contact Us',href: '/contact'},
+                            {opt: t("navbar.home"),href: '/home'},
+                            {opt: t("navbar.order"),href: '/order'},
+                            {opt: t("navbar.contact"),href: '/contact'},
                         ].map((item,i) => (
                             <Link to={item.href} key={i} className='footer-menu-item'>
                                 {item.opt}

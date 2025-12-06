@@ -7,14 +7,21 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "cd server && npm run dev",
+    "start": "concurrently \"npm run dev\" \"npm run server\""
   },
   "dependencies": {
+    "antd": "^6.0.1",
+    "antd-style": "^3.7.1",
+    "concurrently": "^9.2.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-hook-form": "^7.67.0",
     "react-icons": "^5.5.0",
-    "react-router-dom": "^7.9.6"
+    "react-router-dom": "^7.9.6",
+    "react-super-responsive-table": "^6.0.2",
+    "react-toastify": "^11.0.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
