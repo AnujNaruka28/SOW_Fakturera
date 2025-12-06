@@ -60,7 +60,6 @@ class ApiService {
     }
 
     updateProduct(productId,body) {
-        console.log(productId, body)
         return this.patch(`/products/update-product/${productId}`,body);
     }
 }
