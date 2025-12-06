@@ -1,4 +1,9 @@
 {
-  "build": "cd server && npm install",
-  "start": "cd server && npm start"
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "cd server && npm install"
+  },
+  "deploy": {
+    "startCommand": "cd server && npm start"
+  }
 }
