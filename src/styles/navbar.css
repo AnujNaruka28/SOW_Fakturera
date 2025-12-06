@@ -115,7 +115,7 @@
     display: none;
 }
 
-@media (max-width: 771px) {
+@media (max-width: 643px) {
     .menu-nav{
         height: 400px;
         width: 16rem;
