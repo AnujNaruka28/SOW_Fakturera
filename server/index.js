@@ -15,12 +15,13 @@ const PORT = process.env.PORT || 5000;
 
 if(ENV === 'development') {
     app.use(cors());
-} else {
+} else if (ENV === 'production') {
     app.use(cors({
         origin: process.env.FRONTEND_URL,
         methods: ['GET','POST','PATCH','PUT','DELETE'],
         credentials: true
     }));
+    app.options("*", cors());
     app.use(helmet({
         crossOriginEmbedderPolicy: false,
         contentSecurityPolicy: false
