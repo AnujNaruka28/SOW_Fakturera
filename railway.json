@@ -1,9 +1,12 @@
 {
   "build": {
     "builder": "NIXPACKS",
-    "buildCommand": "cd server && npm install"
+    "buildCommand": "cd server && npm install",
+    "nixpacks": {
+      "providers": ["nodejs"]
+    }
   },
   "deploy": {
-    "startCommand": "cd server && npm start"
+    "startCommand": "cd server && npm run dev"
   }
 }
