@@ -1,12 +1,12 @@
 {
   "build": {
     "builder": "RAILPACK",
-    "buildCommand": "cd server && npm install",
+    "buildCommand": "cd server && node index.js",
     "railpack": {
       "providers": ["nodejs"]
     }
   },
   "deploy": {
-    "startCommand": "cd server && npm run dev"
+    "startCommand": "cd server && node index.js"
   }
 }
