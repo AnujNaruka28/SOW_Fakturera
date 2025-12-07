@@ -124,7 +124,7 @@ const Pricelist = () => {
                                                         filteredHeaders.map((header, j) => {
                                                             const value = product[header];
                                                             return (
-                                                                <Td key={j} className={`table-cell ${(header === 'inPrice' || header === 'description') && 'tb-cell-hidden'
+                                                                <Td key={j} className={`table-cell cell-${header} ${(header === 'inPrice' || header === 'description') && 'tb-cell-hidden'
                                                                     || (header === 'unit' || header === 'inStock' || header === 'articleNumber') && 'tb-cell-hidden-mobile'
                                                                     }`}>
                                                                     <Input value={value} name={header}

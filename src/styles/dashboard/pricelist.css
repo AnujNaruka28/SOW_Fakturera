@@ -58,7 +58,7 @@
     align-items: center;
     justify-content: center;
     row-gap: 8px;
-    width: 30%;
+    width: 35%;
 }
 
 .right-btns-box{
@@ -78,7 +78,7 @@
     font-size: 14px;
     color: #c9c9c9f9;
     font-weight: 500;
-    border-radius: 16px;
+    border-radius: 30px;
     padding: 0.6em 1.2em;
     cursor: pointer;
     transition: border-color 0.25s;
@@ -111,10 +111,11 @@
     overflow-y: scroll;
 }
 .table-main{
-    width: 90%;
+    width: 97%;
     height: 100%;
     margin: auto;
 }
+
 
 .table-cell .tdBefore{
     display: none !important;
@@ -138,7 +139,8 @@
 }
 
 .table-header {
-    color: #aeaeae95;
+    color: #737373;
+    font-weight: normal;
 }
 
 .table-row:hover{
@@ -148,4 +150,48 @@
 }
 .right-rows-arrow{
     display: none;
+}
+.pricelist-search-input{
+    width: 100%;
+    padding: 12px 40px 12px 12px;
+    border-radius: 24px;
+    border: 1px solid #d9d9d9;
+}
+.search-input-container{
+    width: 100%;
+    position: relative;
+}
+.search-input-icon{
+    position: absolute;
+    color: #64e5e4;
+    right: 15px;
+    font-size: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.cell-description{
+    width: 28%;
+}
+
+.cell-articleNumber{
+    width: 10%;
+}
+
+.cell-price{
+    width: 8%;
+}
+
+.cell-inStock{
+    width: 5%;
+}
+.cell-unit{
+    width: 5%;
+}
+.cell-inPrice{
+    width: 7%;
+}
+.cell-priceOrService{
+    width: 24%;
 }
