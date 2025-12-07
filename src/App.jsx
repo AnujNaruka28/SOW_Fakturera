@@ -6,6 +6,7 @@ import PublicLayout from './components/common/layouts/PublicLayout'
 import NotFound from './components/common/NotFound';
 import { useMobilePortrait } from './hooks/useMobilePortrait';
 import Terms from './components/common/documents/Terms';
+import { PrivateRoute } from './components/cores/auth/privateroute';
 
 function App() {
 
@@ -24,7 +25,11 @@ function App() {
           }
         </Route>
         
-        <Route path='/dashboard' element={<DashboardLayout/>}>
+        <Route path='/dashboard' element={
+          <PrivateRoute>
+            <DashboardLayout/>
+          </PrivateRoute>
+          }>
           <Route path='pricelist' element={<Pricelist/>}/>
           <Route path='log-out' element={<Navigate to={'/login'} replace/>}/>
           <Route path='*' element={<NotFound/>} />
