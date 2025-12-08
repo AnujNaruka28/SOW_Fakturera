@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 require('dotenv').config();
 const cors = require('cors');
-const rateLimit = require('express-rate-limit');
+// const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
 const authRoutes = require('./routes/auth.route');
 const productRoutes = require('./routes/product.route');
@@ -28,11 +28,11 @@ if(ENV === 'development') {
     }));
 }
 
-app.use(rateLimit({
-    windowMs: 15 * 60 * 1000,
-    max: 100,
-    message: 'Too many request from this IP. Try again after 15 minutes.'
-}))
+// app.use(rateLimit({
+//     windowMs: 15 * 60 * 1000,
+//     max: 100,
+//     message: 'Too many request from this IP. Try again after 15 minutes.'
+// }))
 
 
 app.use(express.json());
