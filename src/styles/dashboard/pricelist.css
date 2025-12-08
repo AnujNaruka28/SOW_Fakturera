@@ -38,11 +38,39 @@
     .tb-cell-hidden{
         display: none;
     }
+    .cell-productOrService{
+        width: 36% !important;
+    }
+    .cell-inPrice{
+        width: 0 !important;
+    }
+    .cell-description{
+        width: 0 !important;
+    }
+    .cell-inStock{
+        width: 8% !important;
+    }
+    .cell-unit{
+        width: 13% !important;
+    }
+    .triple-dot-container{
+        width: 0% !important;
+    }
+    .cell-articleNumber{
+        width: 0% !important;
+    }
+    .cell-price{
+        width: 8% !important;
+    }
 }
 @media (max-width: 555px) {
     .tb-cell-hidden-mobile{
         display: none;
     }
+}
+
+.triple-dot-container{
+    width: 2%;
 }
 .pricelist-header{
     width: 90%;
@@ -128,14 +156,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #bfdade;
+    color: #7bc1f0;
     cursor: pointer;
 }
 
 .input-table-cell{
-    border: 2px solid #bfdade;
+    border: 2px solid #7bc1f0;
     border-radius: 12px;
     font-size: 14px;
+    padding: 4px 4px 4px 4px ;
 }
 
 .table-header {
@@ -154,7 +183,7 @@
 .pricelist-search-input{
     width: 100%;
     padding: 12px 40px 12px 12px;
-    border-radius: 24px;
+    border-radius: 30px;
     border: 1px solid #d9d9d9;
 }
 .search-input-container{
@@ -176,22 +205,22 @@
 }
 
 .cell-articleNumber{
-    width: 10%;
-}
-
-.cell-price{
     width: 8%;
 }
 
+.cell-price{
+    width: 6.8%;
+}
+
 .cell-inStock{
-    width: 5%;
-}
-.cell-unit{
-    width: 5%;
-}
-.cell-inPrice{
     width: 7%;
 }
-.cell-priceOrService{
-    width: 24%;
+.cell-unit{
+    width: 10%;
+}
+.cell-inPrice{
+    width: 6%;
+}
+.cell-productOrService{
+    width: 27%;
 }

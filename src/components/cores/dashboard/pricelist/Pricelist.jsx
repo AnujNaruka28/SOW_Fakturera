@@ -144,7 +144,7 @@ const Pricelist = () => {
                                                             )
                                                         })
                                                     }
-                                                    <Td className='table-cell'>
+                                                    <Td className='table-cell triple-dot-container'>
                                                         <HiDotsHorizontal className='table-triple-dot' />
                                                     </Td>
                                                 </Tr>
