@@ -13,20 +13,12 @@ BigInt.prototype.toJSON = function() {
 const ENV = process.env.NODE_ENV || 'development';
 const PORT = process.env.PORT || 5000;
 
-if(ENV === 'development') {
-    app.use(cors());
-} else if (ENV === 'production') {
-    app.use(cors({
-        origin: process.env.FRONTEND_URL,
-        methods: ['GET','POST','PATCH','PUT','DELETE'],
-        credentials: true
-    }));
-    app.options("*", cors());
-    app.use(helmet({
-        crossOriginEmbedderPolicy: false,
-        contentSecurityPolicy: false
-    }));
-}
+const corsOptions = {
+    origin: ENV === 'development' ? true : process.env.FRONTEND_URL || true,
+    methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE'],
+    credentials: true
+};
+app.use(cors(corsOptions));
 
 // app.use(rateLimit({
 //     windowMs: 15 * 60 * 1000,
