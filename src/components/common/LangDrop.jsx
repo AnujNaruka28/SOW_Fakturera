@@ -28,7 +28,7 @@ const LangDrop = () => {
                     {language.lang} 
                 </p>
 
-                <img src={language.flag} alt={language.lang} id='flag' />                        
+                <img src={language.flag} alt={language.lang} id='flag' loading='eager' />                        
             </div>
 
             {
