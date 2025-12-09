@@ -20,6 +20,7 @@
   z-index: -1;
   object-fit: cover;
   object-position: center;
+  pointer-events: none;
 }
 @media (max-width: 1025px) and (orientation: landscape) {
   .app-main{
