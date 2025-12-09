@@ -11,7 +11,7 @@ const PublicLayout = () => {
     return (
         <main className={`app-main ${(pathname === '/terms') && 'app-padding'}`}>
 
-            <img src={bgImage} alt="" className='app-bg-image'/>
+            <img src={bgImage} alt="" className='app-bg-image' loading='eager'/>
             <Navbar/>
                 <Outlet/>
             {
