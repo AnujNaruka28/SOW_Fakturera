@@ -25,7 +25,7 @@ a:hover {
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #7ca6ff;
+  /* background-color: #7ca6ff; */
   -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
 }
